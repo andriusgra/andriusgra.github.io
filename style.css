@@ -1,0 +1,23 @@
+body {
+    font-family: Sora;
+    font-size: 2rem;
+}
+
+div {
+    padding: 32px;
+    margin: 24px;
+    border: 8px solid royalblue;
+    background: rgb(199, 201, 235);
+}
+
+p {
+    color: rgba(0, 0, 0, 0.671);
+}
+
+a {
+    text-decoration: none;
+    color:rgb(199, 201, 235);
+    background: royalblue;
+    padding: 16px 24px 16px 24px;
+    border-radius: 40px;
+}
