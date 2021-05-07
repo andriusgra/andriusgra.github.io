@@ -1,23 +1,86 @@
 body {
     font-family: Sora;
     font-size: 2rem;
-}
-
-div {
-    padding: 32px;
-    margin: 24px;
-    border: 8px solid royalblue;
-    background: rgb(199, 201, 235);
+    margin: 32px;
 }
 
 p {
     color: rgba(0, 0, 0, 0.671);
 }
 
-a {
+.starlink {
     text-decoration: none;
     color:rgb(199, 201, 235);
     background: royalblue;
     padding: 16px 24px 16px 24px;
     border-radius: 40px;
+}
+
+img {
+    width: 100%;
+}
+
+.page-header {
+    padding: 32px;
+    border: 4px solid #000;
+    background-color: rgb(158, 171, 209);
+    margin-bottom: 40px;
+}
+
+.project {
+    border: 4px solid #000;
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-content {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+@media (max-width: 500px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.project h2 {
+    margin: 24px;
+    font-size: 1.2rem;
+}
+
+.back-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.back-link::before {
+    content: "👈";
+    margin-right: 8px;
+
+    display: inline-block;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes point-left {
+    0% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(-20px);
+    }
 }
